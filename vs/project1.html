@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Management Software - RGUKT Harsha RK Valley</title>
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lilita+One&family=Patua+One&family=Seymour+One&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <header>
+        <div class="headd">
+            <img src="Logonew.png" alt="Image" width="70px" id="logo">
         <h1>RGUKT RK valley Valley Event Management Software</h1>
+        </div>
+        
         <nav>
             <ul>
                 <li class="dropdown">
@@ -16,13 +26,11 @@
                     <div class="dropdown-content">
                         <a href="#Planning">Planning</a>
                         <a href="#Promotion">Promotion</a>
-                        <a href="#feedback">Registration and Ticketing</a>
+                        <a href="#RegistrationandTicketing">Registration and Ticketing</a>
                         <a href="#Reminders">Reminders</a>
                         <a href="#UpcomingEvents">Upcoming Events</a>
                     </div>
                 </li>
-
-
                 <li class="dropdown">
                     <a href="#features" class="dropbtn">Voulnteer Management</a>
                     <div class="dropdown-content">
@@ -41,9 +49,6 @@
                         <a href="#registration">Attendance</a>
                     </div>
                 </li>
-
-    
-
                 <li class="dropdown">
                     <a href="#features" class="dropbtn">Feedback and Analytics</a>
                     <div class="dropdown-content">
@@ -53,8 +58,6 @@
                      
                     </div>
                 </li>
-
-
                 <li class="dropdown">
                     <a href="#features" class="dropbtn">Sports and Games</a>
                     <div class="dropdown-content">
@@ -65,16 +68,6 @@
                         <a href="#feedback">Schedule Calender</a>
                     </div>
                 </li>
-
-
-
-
-
-
-
-
-
-
                 <li class="dropdown">
                     <a href="#about" class="dropbtn">Co-Curriculars</a>
                     <div class="dropdown-content">
@@ -84,11 +77,10 @@
 
                     </div>
                 </li>
-
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Login</a>
                     <div class="dropdown-content">
-                        <a href="simple_login.html">Student</a>
+                        <button id="openPopupBtn">Sign In</button>
                         <a href="facultylogin.html">Faculty</a>
                         <a href="eventorganizers.html">Event organizers</a>
                     </div>
@@ -96,8 +88,34 @@
             </ul>
         </nav>
     </header>
+
+    <div id="popupForm" class="popup-form">
+        <div class="form-container">
+            <span class="close-btn" id="closePopupBtn">&times;</span>
+            <h2>Sign in</h2>
+            <p>Sign in with your email here.</p>
+            <form>
+                <label for="username">Email / Username</label>
+                <input type="text" id="username" name="username" placeholder="Email / Username" required>
+
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <span class="password-toggle" onclick="togglePassword()">&#128065;</span>
+                </div>
+
+                <button type="submit">Sign in</button>
+            </form>
+            
+            <div class="links">
+                <p>Forgot password?<a href="#"> <strong>Reset</strong></a></p>
+                <p>Don't have an account? <a href="#"><strong>Sign up</strong></a></p>
+            </div>
+        </div>
+    </div>
     
     <section id="intro">
+        
         <h2>Welcome to RGUKT RK Valley Event Management</h2>
         <p>Your one-stop solution for planning, promoting, executing, and receiving feedback on all campus events.</p>
     </section>
@@ -144,6 +162,6 @@
         <p>&copy; 2024 RGUKT RK Valley Event Management Software</p>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
 </html>

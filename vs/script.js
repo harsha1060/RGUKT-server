@@ -1,11 +1,23 @@
-const container = document.getElementById('container');
-const registerBtn = document.getElementById('register');
-const loginBtn = document.getElementById('login');
-
-registerBtn.addEventListener('click', () => {
-    container.classList.add("active");
+document.getElementById("openPopupBtn").addEventListener("click", function() {
+    document.getElementById("popupForm").style.display = "flex";
 });
 
-loginBtn.addEventListener('click', () => {
-    container.classList.remove("active");
+document.getElementById("closePopupBtn").addEventListener("click", function() {
+    document.getElementById("popupForm").style.display = "none";
 });
+
+window.addEventListener("click", function(event) {
+    var popup = document.getElementById("popupForm");
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
+});
+
+function togglePassword() {
+    var passwordField = document.getElementById("password");
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+    } else {
+        passwordField.type = "password";
+    }
+}
