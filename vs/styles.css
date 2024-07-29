@@ -58,7 +58,7 @@ header nav ul li .dropdown-content {
     display: none;
     position: absolute;
     background-color: #333;
-    min-width:auto;
+    min-width:max-content;
     z-index: 1;
     border-radius: 10px;
 }
