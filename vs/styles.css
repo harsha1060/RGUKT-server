@@ -24,7 +24,7 @@ header nav ul li {
     position: relative;
     border-radius: 10px;
     background-color: #333;
-    border-radius: 10px;
+    border-radius: 8px;
     
     
     
@@ -58,9 +58,9 @@ header nav ul li .dropdown-content {
     display: none;
     position: absolute;
     background-color: #333;
-    min-width:max-content;
+    min-width:100%;
     z-index: 1;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 header nav ul li .dropdown-content a {
@@ -73,17 +73,17 @@ header nav ul li .dropdown-content a {
 
 header nav ul li .dropdown-content a:hover {
     background-color: #555;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 header nav ul li:hover .dropdown-content {
     display: block;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 header nav ul li:hover .dropbtn {
     display: block;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: #8d1e1e;
 }
 
@@ -92,7 +92,7 @@ section {
     margin: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 #features .feature {
