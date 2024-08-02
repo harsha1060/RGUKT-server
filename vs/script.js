@@ -21,3 +21,4 @@ function togglePassword() {
         passwordField.type = "password";
     }
 }
+
