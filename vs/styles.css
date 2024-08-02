@@ -89,12 +89,28 @@ header nav ul li:hover .dropbtn {
 
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 0;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+/*----------------ABOUT--------------*/
+section .in_about{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
 
+.in_about h2{
+    padding-bottom: 10px;
+}
+
+.right{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
 #features .feature {
     margin-bottom: 20px;
 }
@@ -116,6 +132,7 @@ footer {
 #openPopupBtn{
     margin: 15px;
 }
+/*------------------------------------------popupForm---------------------------------------*/
 #popupForm button {
     padding: 10px 20px;
     font-size: 16px;
@@ -226,3 +243,5 @@ footer {
 #popupForm .links a:hover {
     text-decoration: underline;
 }
+/*---------------------X---------------------popupForm---------------------X------------------*/
+
